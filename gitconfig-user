@@ -1,0 +1,16 @@
+[user]
+	# Name used in commit messages.
+	name = John Ptacek
+	# Email used in commit messages.
+	email = jptacek@gmail.com
+[shell]
+	# Default SSH username.
+	username = john
+ [github]
+	# GitHub username for command-line tools.
+	user = JPtacek
+[alias]
+	# Push the current branch upstream to Jptacek using the same
+	# branch name for the remote branch.
+	um = !(git remote -v | grep -q jptacek || hub fork) \
+	    && git push --set-upstream jptacek $(git current-branch)
