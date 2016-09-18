@@ -2,25 +2,26 @@
  
 http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local-files-on-pull 
  
-git fetch --all 
-git reset --hard origin/master 
+`git fetch --all`
+
+`git reset --hard origin/master`
  
  
 ### Add Multiple files 
  
-git add . 
+`git add . `
  
 To commit them: 
  
-git commit -m "MY MESSAGE HERE" #-m is the message flag 
+`git commit -m "MY MESSAGE HERE" #-m is the message flag `
  
 You can put those steps together like this: 
  
-git commit -a -m "MY MESSAGE HERE" 
+`git commit -a -m "MY MESSAGE HERE" `
  
 To push your committed changes from your local repository to your remote repository: 
  
-git push origin master 
+`git push origin master `
  
 http://stackoverflow.com/questions/19576116/how-to-add-multiple-files-in-git-at-the-same-time 
  
