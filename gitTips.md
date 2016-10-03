@@ -40,7 +40,9 @@ Content from:
 
 ## Setup
 [Download git for OSX](http://code.google.com/p/git-osx-installer/downloads/list?can=3)
+
 [Download git for Windows](http://msysgit.github.io/)
+
 [Download git for Linux](http://git-scm.com/book/en/Getting-Started-Installing-Git)
 
 ## Create a New Repository
