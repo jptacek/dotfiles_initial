@@ -19,6 +19,18 @@ sudo apt-get install git
 git config --global user.name "John Ptacek"
 git config --global user.email "jptacek@gmail.com"
 
+
+# AWS CLI Setup
+#    http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install-linux.html
+#
+curl -O https://bootstrap.pypa.io/get-pip.py
+python3 get-pip.py --user
+pip install awsebcli --upgrade --user
+
+#SSH setup
+sudo apt-get install openssh-server
+sudo ufw allow 22 #Change default port from 22
+
 # Atom.io install
 sudo apt-get install atom
 
