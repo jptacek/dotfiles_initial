@@ -42,3 +42,4 @@ sudo npm install -g docpad
 sudo npm install -g gulp
 sudo npm install -g angular-cli # Angular CLI tools
 sudo npm install -g react-cli react # React CLI
+sudo npm install -g azure-cli  #Anzure CLI tools
