@@ -45,8 +45,13 @@ apm install editor-config #coding styles across editors
 apm install file-icons #UX icons
 apm install minimap
 
+# Ruby install for SASS
+sudo apt-get install ruby-full
+sudo su -c "gem install sass"
+
 # install NPM Packages that are used globally
 sudo npm install -g docpad
 sudo npm install -g gulp
 sudo npm install -g angular-cli # Angular CLI tools
 sudo npm install -g react-cli react # React CLI
+sudo npm install -g azure-cli  #Anzure CLI tools
