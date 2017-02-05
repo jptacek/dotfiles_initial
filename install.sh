@@ -31,6 +31,9 @@ pip install awsebcli --upgrade --user
 sudo apt-get install openssh-server
 sudo ufw allow 22 #Change default port from 22
 
+# Install fortune
+sudo apt-get install fortune
+
 # Atom.io install
 sudo apt-get install atom
 

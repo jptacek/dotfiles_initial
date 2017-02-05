@@ -15,7 +15,6 @@ function my_ip_wireless() # Get IP adress on ethernet.
     echo ${MY_IPWL:-"Not connected"}
 }
 
-alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 function mydf()         # Pretty-print of 'df' output.
 {                       # Inspired by 'dfc' utility.

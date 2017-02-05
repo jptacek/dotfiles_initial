@@ -36,7 +36,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -65,6 +65,7 @@ xterm*|rxvt*)
     ;;
 esac
 
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -82,6 +83,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias dir='ls -alF'
+alias utc='date -u'
+alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -106,7 +109,7 @@ fi
 function _exit()              # Function to run upon exit of shell.
 {
 
-    echo -e "${BRed}Hasta la vista, baby${NC}"
+    echo -e "${BRed}Thanks for visiting $HOSTNAME "
 }
 trap _exit EXIT
 
