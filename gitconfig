@@ -1,8 +1,5 @@
 [include]
 	path = ~/.gitconfig-user
-[user]
-	name = John Ptacek
-	email = jptacek@gmail.com
 
 [color]
 	branch = auto
@@ -158,10 +155,10 @@
 	textconv = xmllint --format --recover
 [difftool "opendiff"]
 	# Set the OS X opendiff command name.
-	path = opendiff
+	# path = opendiff
 [merge]
 	# Use the OS X graphical three-way merge tool for graphical merges.
-	tool = opendiff
+	# tool = opendiff
 [mergetool]
 	# Don't prompt before opening the merge tool.
 	prompt = false
@@ -171,7 +168,7 @@
 	keepTemporaries = false
 [mergetool "opendiff"]
 	# Use a script to setup opendiff correctly for Git merges.
-	path = git-mergetool-opendiff
+	# path = git-mergetool-opendiff
 [apply]
 	# Cleanup whitespace by default when apply patches.
 	whitespace = fix
@@ -199,8 +196,7 @@
 	# (which is often faster).
 	pushInsteadOf = git://gitorious.org/
 [credential]
-	# Use OS X Keychain to store HTTP passwords.
-	helper = osxkeychain
+
 [hub]
 	protocol = https
 # Settings for Git LFS

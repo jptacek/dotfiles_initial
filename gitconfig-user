@@ -6,7 +6,7 @@
 [shell]
 	# Default SSH username.
 	username = john
- [github]
+[github]
 	# GitHub username for command-line tools.
 	user = JPtacek
 [alias]
