@@ -3,6 +3,7 @@
 ## .bash_profile is executed for each interactive login. You can put things
 ##     here you don't want to see at each prompt. For example, diagnostics
 
+alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 function my_ip_wired() # Get IP adress on ethernet.
 {
@@ -59,3 +60,4 @@ function mydf()         # Pretty-print of 'df' output.
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
+source ~/azure.completion.sh
