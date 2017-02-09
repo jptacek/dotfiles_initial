@@ -3,8 +3,6 @@
 ## .bash_profile is executed for each interactive login. You can put things
 ##     here you don't want to see at each prompt. For example, diagnostics
 
-alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
-
 function my_ip_wired() # Get IP adress on ethernet.
 {
     MY_IPW=$(/sbin/ifconfig enx0050b667e645 | awk '/inet / { print "Wired " $2 } ' )
@@ -52,7 +50,7 @@ function mydf()         # Pretty-print of 'df' output.
     echo -e "\n$NC "
     echo -n "Local IP Address :$NC " ; my_ip_wired
     echo -n "Local IP Address :$NC " ; my_ip_wireless
-    echo -n "External IP Address :$NC " ; wanip
+    echo -n "External IP Address :$NC " ; dig +short myip.opendns.com @resolver1.opendns.com
     echo
 }
 
