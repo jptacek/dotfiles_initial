@@ -27,6 +27,9 @@ curl -O https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py --user
 pip install awsebcli --upgrade --user
 
+# Azure CLI Setup
+curl -L https://aka.ms/InstallAzureCLi | bash
+
 #SSH setup
 sudo apt-get install openssh-server
 sudo ufw allow 22 #Change default port from 22
