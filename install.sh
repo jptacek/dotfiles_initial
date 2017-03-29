@@ -41,7 +41,6 @@ sudo apt-get install fortune
 sudo apt-get install atom
 
 # atom.io packages
-apm install jshint
 apm install react
 apm install angularjs
 apm install atom-beautify
@@ -50,6 +49,7 @@ apm install linter #base linter
 apm install editor-config #coding styles across editors
 apm install file-icons #UX icons
 apm install minimap
+apm install linter-eslint #ESLinter
 
 # Ruby install for SASS
 sudo apt-get install ruby-full
