@@ -46,7 +46,7 @@ apm install angularjs
 apm install atom-beautify
 apm install atom-typescript #type script editor
 apm install linter #base linter
-apm install editor-config #coding styles across editors
+apm install editorconfig #coding styles across editors
 apm install file-icons #UX icons
 apm install minimap
 apm install linter-eslint #ESLinter
