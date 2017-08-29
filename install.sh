@@ -40,6 +40,11 @@ sudo apt-get install fortune
 # Atom.io install
 sudo apt-get install atom
 
+# Go setup
+go get -u golang.org/x/tools/cmd/...
+go get -u github.com/golang/lint/golint
+
+
 # atom.io packages
 apm install react
 apm install angularjs
@@ -50,6 +55,10 @@ apm install editorconfig #coding styles across editors
 apm install file-icons #UX icons
 apm install minimap
 apm install linter-eslint #ESLinter
+apm install terminal-plus
+# atom.io Go dev
+apm install go-plus
+apm install autocomplete-go
 
 # Ruby install for SASS
 sudo apt-get install ruby-full
