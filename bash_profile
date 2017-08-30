@@ -53,6 +53,15 @@ function mydf()         # Pretty-print of 'df' output.
     echo -n "External IP Address :$NC " ; dig +short myip.opendns.com @resolver1.opendns.com
     echo
 }
+## Environment variables
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/
+export ANDROID_HOME=/home/john/Android/Sdk
+export GOBIN=$HOME/work/bin
+
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:.
+export PATH=$PATH:/usr/local/go/bin
 
 ## Execute bash Profile
 if [ -f ~/.bashrc ]; then
