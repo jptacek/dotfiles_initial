@@ -30,6 +30,15 @@ To push your committed changes from your local repository to your remote reposit
 Source: [http://stackoverflow.com/questions/19576116/how-to-add-multiple-files-in-git-at-the-same-time](http://stackoverflow.com/questions/19576116/how-to-add-multiple-files-in-git-at-the-same-time
 )
 
+## Create a branch after modifying files
+If you have already modified files and your changes are larger than anticipated, you can create a branch after the fact by running the command:
+
+`git checkout -b new_branch_name`
+
+More info at StackOverflow question [Git: Create a branch from unstaged/uncommitted changes on master
+](https://stackoverflow.com/questions/2569459/git-create-a-branch-from-unstaged-uncommitted-changes-on-master)
+
+
 ## Roger Dudler hints
 
 A series of great tips from [https://rogerdudler.github.io/git-guide/](https://rogerdudler.github.io/git-guide/) that I threw into MD
