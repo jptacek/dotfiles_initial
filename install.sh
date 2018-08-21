@@ -50,3 +50,7 @@ npm install -g docpad
 npm install -g gulp
 npm install -g react-cli react # React CLI
 npm install -g azure-cli  #Anzure CLI tools
+
+
+# Setup SSH key
+ssh-keygen 

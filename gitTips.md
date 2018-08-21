@@ -4,7 +4,6 @@ A collection of hints I have have found to help me navigate Git
 
 ## Rollback changes and reset
 
-
 `git fetch --all`
 
 `git reset --hard origin/master`
@@ -13,24 +12,24 @@ Source: [http://stackoverflow.com/questions/1125968/force-git-to-overwrite-local
 
 ## Add Multiple files
 
-`git add . `
+`git add .`
 
 To commit them:
 
-`git commit -m "MY MESSAGE HERE" #-m is the message flag `
+`git commit -m "MY MESSAGE HERE" #-m is the message flag`
 
 You can put those steps together like this:
 
-`git commit -a -m "MY MESSAGE HERE" `
+`git commit -a -m "MY MESSAGE HERE"`
 
 To push your committed changes from your local repository to your remote repository:
 
-`git push origin master `
+`git push origin master`
 
-Source: [http://stackoverflow.com/questions/19576116/how-to-add-multiple-files-in-git-at-the-same-time](http://stackoverflow.com/questions/19576116/how-to-add-multiple-files-in-git-at-the-same-time
-)
+Source: [http://stackoverflow.com/questions/19576116/how-to-add-multiple-files-in-git-at-the-same-time](http://stackoverflow.com/questions/19576116/how-to-add-multiple-files-in-git-at-the-same-time)
 
 ## Create a branch after modifying files
+
 If you have already modified files and your changes are larger than anticipated, you can create a branch after the fact by running the command:
 
 `git checkout -b new_branch_name`
@@ -38,8 +37,16 @@ If you have already modified files and your changes are larger than anticipated,
 More info at StackOverflow question [Git: Create a branch from unstaged/uncommitted changes on master
 ](https://stackoverflow.com/questions/2569459/git-create-a-branch-from-unstaged-uncommitted-changes-on-master)
 
+## Modify an existing commit
 
-## Roger Dudler hints
+From document at GitLab about [keeping commit history clean](https://about.gitlab.com/2018/06/07/keeping-git-commit-history-clean/).
+
+1. `git add <files>`
+2. `git commit --amend`
+3. Update the commit message if appropriate
+4. `git push --force-with-lease <remote_name> <branch_name>`
+
+# Roger Dudler hints
 
 A series of great tips from [https://rogerdudler.github.io/git-guide/](https://rogerdudler.github.io/git-guide/) that I threw into MD
 format
@@ -48,6 +55,7 @@ Content from:
 [https://rogerdudler.github.io/git-guide/](https://rogerdudler.github.io/git-guide/)
 
 ## Setup
+
 [Download git for OSX](http://code.google.com/p/git-osx-installer/downloads/list?can=3)
 
 [Download git for Windows](http://msysgit.github.io/)
@@ -55,13 +63,15 @@ Content from:
 [Download git for Linux](http://git-scm.com/book/en/Getting-Started-Installing-Git)
 
 ## Create a New Repository
-create a new directory, open it and perform a 
+
+create a new directory, open it and perform a
 
 `git init`
 
 to create a new git repository.
 
 ## Checkout a Repository
+
 create a working copy of a local repository by running the command
 
 `git clone /path/to/repository`
@@ -71,11 +81,13 @@ when using a remote server, your command will be
 `git clone username@host:/path/to/repository`
 
 ## Workflow
+
 your local repository consists of three "trees" maintained by git. The first one is your Working Directory which holds the actual files. The second one is the Index which acts as a staging area and finally the HEAD which points to the last commit you've made.
 
 ![Workflow image](images/workflow.png)
 
 ## Add and Commit
+
 You can propose changes (add it to the Index) using
 
 `git add <filename>`
@@ -95,11 +107,12 @@ This is the first step in the basic git workflow. To actually commit these chang
 Now the file is committed to the HEAD, but not in your remote repository yet.
 
 ## Pushing Changes
-Your changes are now in the HEAD of your local working copy. To send those changes to your remote repository, execute 
+
+Your changes are now in the HEAD of your local working copy. To send those changes to your remote repository, execute
 
 `git push origin master`
 
-Change master to whatever branch you want to push your changes to. 
+Change master to whatever branch you want to push your changes to.
 
 If you have not cloned an existing repository and want to connect your repository to a remote server, you need to add it with
 
@@ -131,7 +144,7 @@ a branch is not available to others unless you push the branch to your remot
 
 ## Update and Merge
 
-to update your local repository to the newest commit, execute 
+to update your local repository to the newest commit, execute
 
 `git pull`
 
@@ -157,11 +170,11 @@ It's recommended to create tags for software releases. this is a known concept, 
 
 the 1b2e1d63ff stands for the first 10 characters of the commit id you want to reference with your tag.
 
-You can get the commit id by looking at the Git log 
+You can get the commit id by looking at the Git log
 
 ## Log
 
-in its simplest form, you can study repository history using.. 
+in its simplest form, you can study repository history using..
 
 `git log`
 
@@ -173,11 +186,11 @@ To see a very compressed log where each commit is one line:
 
 `git log --pretty=oneline`
 
-Or maybe you want to see an ASCII art tree of all the branches, decorated with the names of tags and branches: 
+Or maybe you want to see an ASCII art tree of all the branches, decorated with the names of tags and branches:
 
 `git log --graph --oneline --decorate --all`
 
-See only which files have changed: 
+See only which files have changed:
 
 `git log --name-status`
 
@@ -215,7 +228,7 @@ use interactive adding
 
 `git add -i`
 
-## Links and Resources
+# Links and Resources
 
 ## Graphical Clients
 
@@ -229,7 +242,8 @@ use interactive adding
 
 [GitBox (OSX, App Store)](https://itunes.apple.com/gb/app/gitbox/id403388357?mt=12)
 
-### Guides
+## Guides
+
 [Git Community Book](http://book.git-scm.com/)
 
 [Pro Git](http://progit.org/book/)
@@ -240,5 +254,6 @@ use interactive adding
 
 [A Visual Git Guide](http://marklodato.github.com/visual-git-guide/index-en.html)
 
+From <https://rogerdudler.github.io/git-guide/>
 
-From <https://rogerdudler.github.io/git-guide/>  
+[Keeping Git Commit History Clean](https://about.gitlab.com/2018/06/07/keeping-git-commit-history-clean/)

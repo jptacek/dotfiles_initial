@@ -63,6 +63,13 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:.
 export PATH=$PATH:/usr/local/go/bin
 
+export PATH="$PATH:$HOME/npm/bin"
+export NODE_PATH="$NODE_PATH:$HOME/npm/lib/node_modules"
+
+# Unset manpath so we can inherit from /etc/manpath via the `manpath` command
+unset MANPATH # delete if you already modified MANPATH elsewhere in your config
+export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+
 ## Execute bash Profile
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc
