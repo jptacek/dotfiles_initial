@@ -74,4 +74,9 @@ export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
-source ~/azure.completion.sh
+
+## Execute Azure command line data
+if [ -f ~/azure.completion.sh ]; then
+    source ~/azure.completion.sh
+fi
+
